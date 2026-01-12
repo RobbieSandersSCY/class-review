@@ -1,0 +1,44 @@
+header {
+  background-color: lightgray;
+  border-bottom: 3px solid black;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 5ch;
+}
+
+
+header > nav {
+  font-size: 2ch;
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-right: 1vw;
+  flex: 2;
+  padding-bottom: 5px;
+}
+
+header > p {
+  font-size: 3ch;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+#logo {
+  height: 100px;
+  width: 100px;
+}
+
+@media (max-width: 750px) {
+  header {
+
+  }
+  header > nav {
+    flex-flow: column wrap;
+    justify-content: stretch;
+  }
+}
